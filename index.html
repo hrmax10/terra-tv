@@ -5,64 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terra TV</title>
-    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>  
+
+
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/ewwink/clappr-quality-selector-plugin@latest/quality-selector.js"></script>
+
+
+
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <nav class="navbar fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">Terra TV</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#">Action 1</a>
+                  <a class="dropdown-item" href="#">Action 2</a>
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
 
+<!-- navbar end here  -->
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
-  Launch
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId">
-    <div class="modal-dialog  modal-dialog-centered">
-        <div class="modal-content bg-transparent">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalTitleId">Channel One</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
-            </div>
-            <div class="modal-body">
-                
-
-           
-                
-    <video id=example-video style="width: 100%;" class="video-js vjs-default-skin" controls>
-        <source
-           src="
-           https://admdn1.cdn.mangomolo.com/adsports1/smil:adsports1.stream.smil/chunklist_b125000_t64MTgwcA==.m3u8"
-           type="application/x-mpegURL">
-      </video>
-
-
-
+    <section class="home" id="homeSec">
+        <div class="container text-center d-flex justify-content-center pt-5">
+            <div class="homeTexts w-50 pt-5 mt-5 text-center">
+                <h1 class="pt-5">Worldwide TV channels, Movies , Web Series at one place.</h1>
+                <p>Terra TV, Smarter Than a TV...</p>
+                <a class="btn btn-danger">Stream Now</a>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
+    <!-- home section end here  -->
 
-
-
-
-
-
-      
-      <script src="video.js"></script>
-      <script src="videojs.hls.min.js"></script>
-      <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
-      <script>
-      var player = videojs('example-video');
-      player.play();
-      </script>
-    
-
+    <section class="tv" id="tvc">
+        <div class="container">
+            <h1>TV Channels</h1>
+            <div id="player"></div>
+            <div class="ch">
+                <button class="btn btn-info" onclick="playIt(ch.adSports1)" id="ad1">
+                    AD1
+                </button>
+            </div>
+        </div>
+    </section>
 
 
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js' integrity='sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==' crossorigin='anonymous'></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
