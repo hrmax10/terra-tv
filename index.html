@@ -5,15 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terra TV</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>  
-
-
-
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/ewwink/clappr-quality-selector-plugin@latest/quality-selector.js"></script>
-
-
-
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -73,10 +65,14 @@
 
     <section class="tv" id="tvc">
         <div class="container">
-            <h1>TV Channels</h1>
-            <div id="player"></div>
-            <div class="ch">
-                <button class="btn btn-info" onclick="playIt(ch.adSports1)" id="ad1">
+           
+
+
+          <video id="player" autoplay="autoplay" ></video>
+
+
+
+                <button class="btn btn-info"  id="ad1">
                     AD1
                 </button>
             </div>
@@ -84,8 +80,14 @@
     </section>
 
 
+  
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js' integrity='sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==' crossorigin='anonymous'></script>
+    
+    <script src="//cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    
+    <script src="https://cdn.plyr.io/3.7.3/plyr.js"></script>
     <script src="./js/main.js"></script>
+
 </body>
 </html>
