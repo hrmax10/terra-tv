@@ -12,3 +12,6 @@ body {
     background-image:linear-gradient(to top, rgba(0,0,0,0.5) 2%, rgba(0,0,0,0.5)), url(../images/main-bg.jpg)  ;
 
 }
+.modal-header{
+    padding: 0;
+}

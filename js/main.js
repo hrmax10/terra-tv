@@ -15,10 +15,10 @@ const ch = {
   tst: "https://t5.switchcast2.com:999/hls/t8.m3u8?md5=nYSS1ohkF37JP7NSQgJ4DQ&expires=1670024236",
 };
 
+const player = new Plyr('#player');
 
+function vdoReq(url) {
 
-
-  const player = new Plyr('#player');
 
   player.source = {
     type: 'video',
@@ -32,3 +32,7 @@ const ch = {
     ],
     
   };
+
+}
+
+
