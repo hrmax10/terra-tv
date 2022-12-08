@@ -15,6 +15,31 @@ body {
     background-size: cover;
 
 }
-.modal-header{
+/* .modal-header{
     padding: 0;
+} */
+.modal-content{
+    background: transparent;
+}
+.playerHolder{
+    width: 100%;
+    position: relative; 
+}
+.modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-close{
+    z-index: 50;
+    position: absolute;
+    right: -13px;
+    background: white;
+    color: red;
+    top: -13px;
+    line-height: 1px;
+}
+.btn-close:hover{   
+    background: red;
+    color: white;
 }
