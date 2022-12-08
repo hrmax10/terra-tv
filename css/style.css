@@ -74,10 +74,13 @@ body {
 }
 .card{
     /* flex: 0 0 auto; */
-    margin-right: 8px;
+    margin-right: 12px;
     min-width: 145px !important;
     max-width: 145px !important;
     border: none;
     text-align: center;
     cursor: pointer;
+}
+.card img {
+    height: 165px;
 }

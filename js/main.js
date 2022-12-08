@@ -8,8 +8,8 @@ const sports = {
      "https://dmitnthvll.cdn.mangomolo.com/dubaisports/smil:dubaisports.smil/chunklist_b850000.m3u8",
    dubaiSports3:
      "https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd5/smil:dubaisportshd5.smil/chunklist_b1300000.m3u8",
-   fightNetwork: "https://d12a2vxqkkh1bo.cloudfront.net/hls/360p/playlist.m3u8",
-   tudn: "http://zaintv.live:8080/live/king/1234/1787.m3u8",
+	fightNetwork: "https://d12a2vxqkkh1bo.cloudfront.net/hls/360p/playlist.m3u8",
+   
 };
  
 
@@ -42,7 +42,9 @@ function tvRemote(url) {
 	// close modal and stop the playback
 	 document.getElementById('modalClose').addEventListener('click', () => { 
 		 player.stop();
-	})
+	 })
+	
+		
 } 
 
 
